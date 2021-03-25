@@ -1,0 +1,102 @@
+/* **********************GOOGLE FONT LINK**************** */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  height: 100vh;
+}
+.testimonial-container{
+  background-color: #476ce4;
+  color: white;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 50px 80px;
+  max-width: 768px;
+  position: relative;
+
+}
+.fa-quote{
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 25px;
+  position: absolute;
+  top: 60px;
+
+}
+
+.fa-quote-left{
+  left: 40px;
+  
+}
+.fa-quote-right{
+  right: 40px;
+}
+
+.testimonial-container{
+  line-height: 28px;
+  text-align: justify;
+
+}
+.user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+
+}
+.user .user-image{
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+}
+.user .user-details{
+  margin-left: 10px;
+
+}
+.user .role{
+  font-weight: normal;
+  margin: 4px 0;
+}
+
+.progress-bar{
+  background-color: white;
+  height: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+  transform-origin: left;
+  border-radius: 2px;
+  animation: grow 10s linear infinite;
+}
+
+@keyframes grow{
+  0%{
+    transform: scaleX(0);
+  }
+}
+
+
+
+
+@media (max-width: 768px){
+  .fa-quote{
+    display: none;
+
+  }
+  .testimonial-container{
+    padding: 20px 30px;
+  }
+}
